@@ -9,3 +9,5 @@ space for comments. Windows XP users should know that their Internet Explorer do
 support and in that case if you want to create web pages with renju diagrams then you could just
 visit www.java.com and install Java support first. Renlib is programmed by Frank Arkbo, Sweden.
 Location: http://www.renju.se/renlib/
+
+![alt text](http://www.renju.se/renlib/RenLib.gif "Description goes here")
