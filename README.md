@@ -10,4 +10,4 @@ support and in that case if you want to create web pages with renju diagrams the
 visit www.java.com and install Java support first. Renlib is programmed by Frank Arkbo, Sweden.
 Location: http://www.renju.se/renlib/ The project is made in Microsoft Visual Studio C++.
 
-![alt text](http://www.renju.se/renlib/RenLib.gif "Description goes here")
+![alt text](RenLib.gif "Description goes here")
