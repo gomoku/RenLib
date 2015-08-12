@@ -1,0 +1,1597 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\RenLib.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Read...",                     ID_FILE_READ
+        MENUITEM "Read all...",                 ID_FILE_READ_ALL
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save Library As...",          ID_FILE_SAVE_LIBRARY_AS
+        MENUITEM "Save Position As...",         ID_FILE_SAVE_POSITION_AS
+        MENUITEM SEPARATOR
+        POPUP "Export Library"
+        BEGIN
+            MENUITEM "Text Board",                  ID_FILE_EXPORT_LIBRARY_TEXT_BOARD
+
+            MENUITEM "RenLib applet",               ID_FILE_EXPORT_LIBRARY_RENLIB_APPLET
+
+            MENUITEM "Game Collection",             ID_FILE_EXPORT_LIBRARY_GAME_COLLECTION
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Make tournament RenLib applets", 
+                                                ID_FILE_MAKE_TOURNAMENT_RENLIB_APPLET
+
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Update Mode\tCtrl+M",         ID_EDIT_UPDATE_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "Problem Mode",                ID_EDIT_PROBLEM_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "Mark",                        ID_EDIT_MARK
+        MENUITEM SEPARATOR
+        MENUITEM "Delete Move\tDelete, Backspace", ID_EDIT_DELETE_MOVE
+        MENUITEM "Delete Variants",             ID_EDIT_DELETE_VARIANTS
+        MENUITEM "Clear All Marks",             ID_EDIT_CLEAR_ALL_MARKS
+        MENUITEM SEPARATOR
+        MENUITEM "Insert Pass Move",            ID_EDIT_INSERT_PASS_MOVE
+        MENUITEM SEPARATOR
+        MENUITEM "Find &Comment\tCtrl+F",       ID_EDIT_FIND_COMMENT
+        MENUITEM "Find &Mark\tAlt+F",           ID_EDIT_FIND_MARK
+        MENUITEM "Find Move\tAlt+M",            ID_EDIT_FIND_MOVE
+        MENUITEM SEPARATOR
+        MENUITEM "Find Same Position\tCtrl+P",  ID_EDIT_FIND_SAME_POSITION
+        MENUITEM "Find Similar Position\tAlt+P", 
+                                                ID_EDIT_FIND_SIMILAR_POSITION
+
+        MENUITEM SEPARATOR
+        MENUITEM "Find Next\tF3",               ID_EDIT_FIND_NEXT
+        MENUITEM "Find Previous\tShift+F3",     ID_EDIT_FIND_PREVIOUS
+        MENUITEM SEPARATOR
+        MENUITEM "Start Position",              ID_EDIT_START_POSITION
+        MENUITEM "Find Start Position\tAlt+S",  ID_EDIT_FIND_START_POSITION
+        MENUITEM SEPARATOR
+        MENUITEM "&Auto Enter Board Text\tAlt+B", 
+                                                ID_EDIT_AUTO_ENTER_BOARD_TEXT
+
+        MENUITEM "Set Next Auto Board Text",    ID_EDIT_SET_NEXT_AUTO_BOARD_TEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Find VCF\tF4",                ID_EDIT_FIND_VCF
+        MENUITEM "Find VCT\tF5",                ID_EDIT_FIND_VCT
+        MENUITEM "Stop VCF/VCT\tF6",            ID_EDIT_FIND_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "Convert To Standard",         ID_EDIT_CONVERT_TO_STANDARD
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Size"
+        BEGIN
+            MENUITEM "Large",                       ID_VIEW_SIZE_LARGE
+            MENUITEM "Medium",                      ID_VIEW_SIZE_MEDIUM
+            MENUITEM "Small",                       ID_VIEW_SIZE_SMALL
+            MENUITEM SEPARATOR
+            MENUITEM "&Default Size",               ID_VIEW_SIZE_DEFAULT
+        END
+        POPUP "&Coordinates"
+        BEGIN
+            MENUITEM "&None",                       ID_VIEW_COORDINATES_NONE
+            MENUITEM "A - &O",                      ID_VIEW_COORDINATES_AO
+            , CHECKED
+            MENUITEM "A - &P",                      ID_VIEW_COORDINATES_AP
+            MENUITEM SEPARATOR
+            MENUITEM "&Swap 1 - 15",                ID_VIEW_COORDINATES_SWAP_NUMBER
+
+            MENUITEM SEPARATOR
+            MENUITEM "&Follow rotation and reflection", 
+                                                    ID_VIEW_COORDINATES_FOLLOW_ROTATION_AND_REFLECTION
+
+        END
+        POPUP "&Font"
+        BEGIN
+            POPUP "Co&mment"
+            BEGIN
+                MENUITEM "Choose &Font...",             ID_VIEW_FONT_CHOOSE_FONT_COMMENT
+
+                MENUITEM "&Default",                    ID_VIEW_FONT_DEFAULT_FONT_COMMENT
+
+            END
+            POPUP "Board &Text"
+            BEGIN
+                MENUITEM "Choose &Font...",             ID_VIEW_FONT_CHOOSE_FONT_BOARD_TEXT
+
+                MENUITEM "&Default",                    ID_VIEW_FONT_DEFAULT_FONT_BOARD_TEXT
+
+            END
+            POPUP "&Coordinate and Stone Number"
+            BEGIN
+                MENUITEM "Choose &Font...",             ID_VIEW_FONT_CHOOSE_FONT
+
+                MENUITEM "&Default",                    ID_VIEW_FONT_DEFAULT_FONT
+
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "All Default",                 ID_VIEW_FONT_ALL_DEFAULT
+        END
+        POPUP "C&olor"
+        BEGIN
+            POPUP "Bac&kground"
+            BEGIN
+                MENUITEM "Choose &Color...",            ID_VIEW_COLOR_BACKGROUND_CHOOSE_COLOR
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_BACKGROUND_DEFAULT
+
+            END
+            POPUP "&Board"
+            BEGIN
+                MENUITEM "Choose &Color...",            ID_VIEW_COLOR_BOARD_CHOOSE_COLOR
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_BOARD_DEFAULT
+
+                MENUITEM SEPARATOR
+                MENUITEM "Choose &Bitmap ...",          ID_VIEW_COLOR_BOARD_CHOOSE_BITMAP
+
+                MENUITEM "D&efault",                    ID_VIEW_COLOR_BOARD_DEFAULT_BITMAP
+
+            END
+            POPUP "&Stone"
+            BEGIN
+                MENUITEM "&Black Color...",             ID_VIEW_COLOR_STONE_CHOOSE_BLACK
+
+                MENUITEM "&White Color...",             ID_VIEW_COLOR_STONE_CHOOSE_WHITE
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_STONE_DEFAULT
+
+            END
+            POPUP "&Variant"
+            BEGIN
+                MENUITEM "&Black Color...",             ID_VIEW_COLOR_VARIANT_CHOOSE_BLACK
+
+                MENUITEM "&White Color...",             ID_VIEW_COLOR_VARIANT_CHOOSE_WHITE
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_VARIANT_DEFAULT
+
+            END
+            POPUP "&Last Move"
+            BEGIN
+                MENUITEM "Choose &Color...",            ID_VIEW_COLOR_LAST_MOVE_CHOOSE_COLOR
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_LAST_MOVE_DEFAULT
+
+            END
+            POPUP "Fo&rbidden"
+            BEGIN
+                MENUITEM "Choose &Color...",            ID_VIEW_COLOR_FORBIDDEN_CHOOSE_COLOR
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_FORBIDDEN_DEFAULT
+
+            END
+            POPUP "VC&F"
+            BEGIN
+                MENUITEM "&Black Color...",             ID_VIEW_COLOR_VCF_COLOR_CHOOSE_BLACK
+
+                MENUITEM "&White Color...",             ID_VIEW_COLOR_VCF_COLOR_CHOOSE_WHITE
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_VCF_COLOR_DEFAULT
+
+            END
+            POPUP "VC&T"
+            BEGIN
+                MENUITEM "&Black Color...",             ID_VIEW_COLOR_VCT_COLOR_CHOOSE_BLACK
+
+                MENUITEM "&White Color...",             ID_VIEW_COLOR_VCT_COLOR_CHOOSE_WHITE
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_VCT_COLOR_DEFAULT
+
+            END
+            POPUP "&Auto Link Variant"
+            BEGIN
+                MENUITEM "&Black Color...",             ID_VIEW_COLOR_AUTO_LINK_VARIANT_COLOR_CHOOSE_BLACK
+
+                MENUITEM "&White Color...",             ID_VIEW_COLOR_AUTO_LINK_VARIANT_COLOR_CHOOSE_WHITE
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_AUTO_LINK_VARIANT_COLOR_DEFAULT
+
+            END
+            POPUP "Changed &Order Of Moves Variant"
+            BEGIN
+                MENUITEM "&Black Color...",             ID_VIEW_COLOR_CHANGED_ORDER_OF_MOVES_VARIANT_COLOR_CHOOSE_BLACK
+
+                MENUITEM "&White Color...",             ID_VIEW_COLOR_CHANGED_ORDER_OF_MOVES_VARIANT_COLOR_CHOOSE_WHITE
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_CHANGED_ORDER_OF_MOVES_VARIANT_COLOR_DEFAULT
+
+            END
+            MENUITEM SEPARATOR
+            POPUP "&Comment"
+            BEGIN
+                MENUITEM "&Text Color...",              ID_VIEW_COLOR_COMMENT_TEXT
+
+                MENUITEM "&Background Color...",        ID_VIEW_COLOR_COMMENT_BACKGROUND
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_COMMENT_DEFAULT
+
+            END
+            POPUP "Coor&dinate"
+            BEGIN
+                MENUITEM "Choose &Color...",            ID_VIEW_COLOR_COORDINATE_CHOOSE_COLOR
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_COORDINATE_DEFAULT
+
+            END
+            POPUP "Board &Text"
+            BEGIN
+                MENUITEM "Choose &Color...",            ID_VIEW_COLOR_BOARD_TEXT_CHOOSE_COLOR
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_BOARD_TEXT_DEFAULT
+
+            END
+            POPUP "Stone &Number"
+            BEGIN
+                MENUITEM "&Black Color...",             ID_VIEW_COLOR_STONE_NUMBER_CHOOSE_BLACK
+
+                MENUITEM "&White Color...",             ID_VIEW_COLOR_STONE_NUMBER_CHOOSE_WHITE
+
+                MENUITEM "&Default",                    ID_VIEW_COLOR_STONE_NUMBER_DEFAULT
+
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "All Default",                 ID_VIEW_COLOR_ALL_DEFAULT
+
+        END
+        POPUP "&Board Text"
+        BEGIN
+            MENUITEM "&Show\tAlt+Shift+B",          ID_VIEW_BOARD_TEXT_SHOW
+            MENUITEM "&Extra Space",                ID_VIEW_BOARD_TEXT_EXTRA_SPACE
+
+        END
+        POPUP "VCF/VCT"
+        BEGIN
+            MENUITEM "1, 2, 3",                     ID_VIEW_WIN_123
+            MENUITEM "A, B, C",                     ID_VIEW_WIN_ABC_UPPER
+            MENUITEM "a, b, c",                     ID_VIEW_WIN_ABC_LOWER
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Show Boar&d Bitmap",          ID_VIEW_SHOW_BOARD_BITMAP
+        MENUITEM "Show Ston&e Bitmap",          ID_VIEW_SHOW_STONE_BITMAP
+        MENUITEM SEPARATOR
+        MENUITEM "Show &Numbers\tAlt+N",        ID_VIEW_SHOW_NUMBERS
+        MENUITEM "Show &Last Move\tAlt+L",      ID_VIEW_SHOW_LAST_MOVE
+        MENUITEM "Show &Variants\tAlt+V",       ID_VIEW_SHOW_VARIANTS
+        MENUITEM "Show Co&mments\tAlt+C",       ID_VIEW_SHOW_COMMENTS
+        MENUITEM "Show Forbidden\tAlt+X",       ID_VIEW_SHOW_FORBIDDEN_POINTS
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Auto Point Mouse\tAlt+A",    ID_VIEW_AUTO_POINT_MOUSE
+        MENUITEM SEPARATOR
+        MENUITEM "Auto Find Same Position",     ID_VIEW_AUTO_FIND_SAME_POSITION
+
+        MENUITEM "Show Auto Link Variants",     ID_VIEW_SHOW_AUTO_LINK_VARIANTS
+
+        MENUITEM "Show Changed Order Of Moves Variants", 
+                                                ID_VIEW_SHOW_CHANGED_ORDER_OF_MOVES_VARIANTS
+
+        MENUITEM SEPARATOR
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&File",                       IDW_FILE_BAR
+            MENUITEM "&Edit",                       IDW_EDIT_BAR
+            MENUITEM "&Move",                       IDW_MOVE_BAR
+            MENUITEM "&Position",                   IDW_POSITION_BAR
+            MENUITEM "&Find",                       IDW_FIND_BAR
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Move"
+    BEGIN
+        MENUITEM "Back\tB, Left Arrow",         ID_MOVE_BACK
+        MENUITEM "Forward\tF, Right Arrow",     ID_MOVE_FORWARD
+        MENUITEM SEPARATOR
+        MENUITEM "Down\tD, Down Arrow, Page Down", ID_MOVE_DOWN
+        MENUITEM "Up\tU, Up Arrow, Page Up",    ID_MOVE_UP
+        MENUITEM SEPARATOR
+        MENUITEM "First Move\t1, Home",         ID_MOVE_1ST_MOVE
+        MENUITEM "Last Move\tL, End",           ID_MOVE_LAST_MOVE
+        MENUITEM SEPARATOR
+        MENUITEM "Pass Move",                   ID_MOVE_PASS
+    END
+    POPUP "&Position"
+    BEGIN
+        MENUITEM "    0 degrees",               ID_POSITION_0_DEGREES
+        , CHECKED
+        MENUITEM "  90 degrees",                ID_POSITION_90_DEGREES
+        MENUITEM "180 degrees",                 ID_POSITION_180_DEGREES
+        MENUITEM "270 degrees",                 ID_POSITION_270_DEGREES
+        MENUITEM SEPARATOR
+        MENUITEM "Turn +90 degrees",            ID_POSITION_TURN_PLUS_90_DEGREES
+
+        MENUITEM "Turn  -90 degrees",           ID_POSITION_TURN_MINUS_90_DEGREES
+
+        MENUITEM SEPARATOR
+        MENUITEM "Reflect Left/Right",          ID_POSITION_REFLECT_LEFT_RIGHT
+
+        MENUITEM "Reflect Up/Down",             ID_POSITION_REFLECT_UP_DOWN
+    END
+    POPUP "&Options"
+    BEGIN
+        POPUP "Environment"
+        BEGIN
+            MENUITEM "Associate .lib",              ID_OPTIONS_ENVIRONMENT_ASSOCIATE_LIB
+
+            MENUITEM "Associate .wzq",              ID_OPTIONS_ENVIRONMENT_ASSOCIATE_WZQ
+
+            MENUITEM "Associate .buf",              ID_OPTIONS_ENVIRONMENT_ASSOCIATE_BUF
+
+            MENUITEM "Associate .pdb",              ID_OPTIONS_ENVIRONMENT_ASSOCIATE_PDB
+
+            MENUITEM "Associate .pos",              ID_OPTIONS_ENVIRONMENT_ASSOCIATE_POS
+
+            MENUITEM "Associate .renjs and .ren",   ID_OPTIONS_ENVIRONMENT_ASSOCIATE_RENJS
+
+            MENUITEM "Associate .sgf",              ID_OPTIONS_ENVIRONMENT_ASSOCIATE_SGF
+
+            MENUITEM "Associate .bdt",              ID_OPTIONS_ENVIRONMENT_ASSOCIATE_BDT
+
+            MENUITEM "Associate .rdf",              ID_OPTIONS_ENVIRONMENT_ASSOCIATE_RDF
+
+            MENUITEM SEPARATOR
+            MENUITEM "Associate All",               ID_OPTIONS_ENVIRONMENT_ASSOCIATE_ALL
+
+        END
+        POPUP "Evaluator"
+        BEGIN
+            MENUITEM "Renju Class / Renju Solver",  ID_OPTIONS_EVALUATOR_RENJU_CLASS_RENJU_SOLVER
+
+            MENUITEM "None",                        ID_OPTIONS_EVALUATOR_NONE
+
+        END
+    END
+    POPUP "&Browser"
+    BEGIN
+        MENUITEM "Open diagrams\tF10",          ID_BROWSER_OPEN_DIAGRAMS
+        MENUITEM "Read diagrams",               ID_BROWSER_READ_DIAGRAMS
+        MENUITEM SEPARATOR
+        MENUITEM "Open default browser\tF12",   ID_BROWSER_OPEN_IN_DEFAULT_BROWSER
+
+        MENUITEM SEPARATOR
+        MENUITEM "RenjuNet Portal",             ID_BROWSER_RENJU_NET_PORTAL
+        MENUITEM "RIF - Renju International Federation", ID_BROWSER_RIF
+        MENUITEM "Online Renju Class",          ID_BROWSER_ONLINE_RENJU_CLASS
+
+        MENUITEM "Forum - Online Renju Class",  ID_BROWSER_FORUM_ONLINE_RENJU_CLASS
+
+        MENUITEM "RenLib Homepage - 1st",       ID_BROWSER_RENLIB_HOMEPAGE_1ST
+
+        MENUITEM "RenLib Homepage - 2nd",       ID_BROWSER_RENLIB_HOMEPAGE_2ND
+
+        MENUITEM "RenLib News",                 ID_BROWSER_RENLIB_NEWS
+        MENUITEM "RenLib User's Guide\tF1",     ID_BROWSER_RENLIB_USERS_GUIDE
+
+        MENUITEM "Start Page\tF11",             ID_BROWSER_START_PAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Use current page as start page", 
+                                                ID_BROWSER_USE_CURRENT_PAGE_AS_START_PAGE
+
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About RenLib...",            ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "RenLib User's Guide\tF1",     ID_BROWSER_RENLIB_USERS_GUIDE
+
+    END
+END
+
+IDR_TOOLBAR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&ToolBars"
+    BEGIN
+        MENUITEM "&File",                       IDW_FILE_BAR
+        MENUITEM "&Edit",                       IDW_EDIT_BAR
+        MENUITEM "&Move",                       IDW_MOVE_BAR
+        MENUITEM "&Position",                   IDW_POSITION_BAR
+        MENUITEM "&Find",                       IDW_FIND_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_VIEW_AUTO_POINT_MOUSE, VIRTKEY, ALT, NOINVERT
+    "B",            ID_EDIT_AUTO_ENTER_BOARD_TEXT, VIRTKEY, ALT, NOINVERT
+    "B",            ID_VIEW_BOARD_TEXT_SHOW, VIRTKEY, SHIFT, ALT, NOINVERT
+    "C",            ID_VIEW_SHOW_COMMENTS,  VIRTKEY, ALT, NOINVERT
+    "F",            ID_EDIT_FIND_COMMENT,   VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND_MARK,      VIRTKEY, ALT, NOINVERT
+    "L",            ID_VIEW_SHOW_LAST_MOVE, VIRTKEY, ALT, NOINVERT
+    "M",            ID_EDIT_UPDATE_MODE,    VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_EDIT_FIND_MOVE,      VIRTKEY, ALT, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_VIEW_SHOW_NUMBERS,   VIRTKEY, ALT, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_EDIT_FIND_SAME_POSITION, VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_EDIT_FIND_SIMILAR_POSITION, VIRTKEY, ALT, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_EDIT_FIND_START_POSITION, VIRTKEY, ALT, NOINVERT
+    "V",            ID_VIEW_SHOW_VARIANTS,  VIRTKEY, ALT, NOINVERT
+    VK_F1,          ID_BROWSER_RENLIB_USERS_GUIDE, VIRTKEY, NOINVERT
+    VK_F11,         ID_BROWSER_START_PAGE,  VIRTKEY, NOINVERT
+    VK_F12,         ID_BROWSER_OPEN_IN_DEFAULT_BROWSER, VIRTKEY, NOINVERT
+    VK_F3,          ID_EDIT_FIND_NEXT,      VIRTKEY, NOINVERT
+    VK_F3,          ID_EDIT_FIND_PREVIOUS,  VIRTKEY, SHIFT, NOINVERT
+    VK_F4,          ID_EDIT_FIND_VCF,       VIRTKEY, NOINVERT
+    VK_F5,          ID_EDIT_FIND_VCT,       VIRTKEY, NOINVERT
+    VK_F6,          ID_EDIT_FIND_STOP,      VIRTKEY, NOINVERT
+    VK_F10,         ID_BROWSER_OPEN_DIAGRAMS, VIRTKEY, NOINVERT
+    VK_SPACE,       ID_VIEW_BOARD_TEXT_EXTRA_SPACE, VIRTKEY, ALT, NOINVERT
+    "X",            ID_VIEW_SHOW_FORBIDDEN_POINTS, VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 257, 56
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About RenLib"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,200,7,50,14,WS_GROUP
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "RenLib version",IDC_STATIC,45,10,51,8,SS_NOPREFIX
+    LTEXT           "Frank Arkbo, Sweden",IDC_STATIC,45,27,80,8
+    LTEXT           "e-mail",IDC_MAIL,45,37,205,8,SS_CENTERIMAGE
+    LTEXT           "x.y",IDC_VERSION,98,10,95,8
+END
+
+IDD_RENLIB_FORM DIALOG DISCARDABLE  0, 0, 358, 291
+STYLE WS_CHILD
+FONT 8, "System"
+BEGIN
+    CONTROL         "Tab2",IDC_TAB,"SysTabControl32",TCS_HOTTRACK | 
+                    TCS_RAGGEDRIGHT | TCS_FOCUSNEVER | WS_TABSTOP,213,20,133,
+                    25
+    EDITTEXT        IDC_MULTI_LINE_COMMENT,224,53,114,44,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_ONE_LINE_COMMENT,0,3,355,16,ES_AUTOHSCROLL
+    COMBOBOX        IDC_ADDRESS,225,165,110,30,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Go",IDC_GO,340,165,12,12
+    CONTROL         "List1",IDC_STATISTICS,"SysListView32",LVS_REPORT | 
+                    WS_BORDER,225,109,114,46
+    CONTROL         "",IDC_EXPLORER,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    0x0,25,30,170,150
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,0
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Renju Library Program\0"
+            VALUE "CompanyName", "RenLib\0"
+            VALUE "FileDescription", "RenLib MFC Application\0"
+            VALUE "FileVersion", "3.6\0"
+            VALUE "InternalName", "RenLib\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006, Frank Arkbo, Sweden\0"
+            VALUE "LegalTrademarks", "RenLib\0"
+            VALUE "OriginalFilename", "RenLib.exe\0"
+            VALUE "PrivateBuild", "RenLib 3.6\0"
+            VALUE "ProductName", "Renju Library program\0"
+            VALUE "ProductVersion", "3.6\0"
+            VALUE "SpecialBuild", "RenLib 3.6\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 49
+    END
+
+    IDD_RENLIB_FORM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 355
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_RENLIB_FORM DLGINIT
+BEGIN
+    IDC_EXPLORER, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x2324, 0x0000, 0x1f02, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "RenLib\n\nRenLib\nRenLib Files (*.lib)\n.lib\nRenLib.Library\nRenLib Library"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "RenLib"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new library\nNew"
+    ID_FILE_OPEN            "Open an existing RenLib library or open a file as a new library\nOpen"
+    ID_FILE_SAVE            "Save the current library\nSave"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information"
+    ID_APP_EXIT             "Exit program"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this file"
+    ID_FILE_MRU_FILE2       "Open this file"
+    ID_FILE_MRU_FILE3       "Open this file"
+    ID_FILE_MRU_FILE4       "Open this file"
+    ID_FILE_MRU_FILE5       "Open this file"
+    ID_FILE_MRU_FILE6       "Open this file"
+    ID_FILE_MRU_FILE7       "Open this file"
+    ID_FILE_MRU_FILE8       "Open this file"
+    ID_FILE_MRU_FILE9       "Open this file"
+    ID_FILE_MRU_FILE10      "Open this file"
+    ID_FILE_MRU_FILE11      "Open this file"
+    ID_FILE_MRU_FILE12      "Open this file"
+    ID_FILE_MRU_FILE13      "Open this file"
+    ID_FILE_MRU_FILE14      "Open this file"
+    ID_FILE_MRU_FILE15      "Open this file"
+    ID_FILE_MRU_FILE16      "Open this file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_MSG_SAVE            "Do you want to save file %s ?"
+    IDS_CAP_CONFIRM_SAVE    "Confirm Save"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_MODE       " Display Mode "
+    ID_INDICATOR_MOVE       " Move 225 "
+    ID_INDICATOR_VAR        " Var 99999 "
+    ID_INDICATOR_MARK       " Start "
+    ID_INDICATOR_MOUSE      " A15 "
+    ID_INDICATOR_TEXT       " 225 "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MOVE_1ST_MOVE        "Go back to first move"
+    ID_MOVE_BACK            "Go back one move"
+    ID_MOVE_DOWN            "Go down, i.e. make moves as long as only one variant"
+    ID_MOVE_UP              "Go back until branch"
+    ID_MOVE_FORWARD         "Go forward one move, i.e. repeat previous move"
+    ID_EDIT_UPDATE_MODE     "Change to Update Mode or Display Mode\nUpdate/Display"
+    ID_EDIT_DELETE_MOVE     "Delete current move and variants"
+    ID_EDIT_MARK            "Set or Clear Mark\nMark"
+    ID_EDIT_FIND_MARK       "Find marked move in branch\nFind Mark"
+    ID_EDIT_FIND_COMMENT    "Find comment in branch\nFind Comment"
+    ID_VIEW_SIZE_LARGE      "Change size to Large"
+    ID_VIEW_SIZE_MEDIUM     "Change size to Medium"
+    ID_VIEW_SIZE_SMALL      "Change size to Small"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SIZE_DEFAULT    "Change size according to screen resolution"
+    ID_VIEW_COORDINATES_AO  "A B C D E F G H I J K L M N O"
+    ID_VIEW_COORDINATES_AP  "A B C D E F G H J K L M N O P"
+    ID_VIEW_COORDINATES_NONE "No Coordinates"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_POSITION_0_DEGREES   "Turn position to 0 degrees, i.e. normal\n0 degrees"
+    ID_POSITION_90_DEGREES  "Turn position to 90 degrees\n90 degrees"
+    ID_POSITION_180_DEGREES "Turn position to 180 degrees\n180 degrees"
+    ID_POSITION_270_DEGREES "Turn position to 270 degrees\n270 degrees"
+    ID_POSITION_TURN_MINUS_90_DEGREES 
+                            "Turn position -90 degrees\nTurn -90 degrees"
+    ID_POSITION_TURN_PLUS_90_DEGREES 
+                            "Turn position +90 degrees\nTurn +90 degrees"
+    ID_POSITION_REFLECT_LEFT_RIGHT 
+                            "Reflect position Left/Right, 8th column\nLeft/Right"
+    ID_POSITION_REFLECT_UP_DOWN "Reflect position Up/Down, 8th row\nUp/Down"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_FONT_CHOOSE_FONT "Choose font of coordinate and stone number"
+    ID_VIEW_COLOR_BOARD_CHOOSE_COLOR "Choose color of board"
+    ID_VIEW_FONT_DEFAULT_FONT "Choose default font: System"
+    ID_VIEW_COLOR_BOARD_DEFAULT 
+                            "Choose default color of board: Dark Yellow, RGB(192,192,0)"
+    ID_EDIT_FIND_NEXT       "Find next (Mark, Comment, Move. Position)"
+    ID_VIEW_SHOW_NUMBERS    "Show move numbers"
+    ID_VIEW_SHOW_LAST_MOVE  "Show last move box"
+    ID_VIEW_SHOW_VARIANTS   "Show variants"
+    ID_VIEW_SHOW_COMMENTS   "Show comments"
+    ID_VIEW_AUTO_POINT_MOUSE "Autopoint mouse at variant"
+    ID_EDIT_CLEAR_ALL_MARKS "Clear all marks in the library"
+    ID_EDIT_START_POSITION  "Set or Clear Start Position\nStart"
+    ID_EDIT_FIND_START_POSITION "Find start position in library\nFind Start"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_FONT_CHOOSE_FONT_COMMENT "Choose font of comment"
+    ID_VIEW_FONT_DEFAULT_FONT_COMMENT "Choose default font: System"
+    ID_VIEW_FONT_CHOOSE_FONT_BOARD_TEXT "Choose font of board text"
+    ID_VIEW_FONT_DEFAULT_FONT_BOARD_TEXT "Choose default font: System"
+    ID_VIEW_FONT_ALL_DEFAULT "Choose default fonts for all"
+    ID_EDIT_CONVERT_TO_STANDARD "Convert positions in the library to standard"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_EXPORT_LIBRARY_TEXT_BOARD 
+                            "Export positions in the library to text board format"
+    ID_FILE_EXPORT_LIBRARY_RENLIB_APPLET 
+                            "Export positions in the library to RenLib applet format"
+    ID_OPTIONS_ENVIRONMENT_ASSOCIATE_LIB 
+                            "Associate file extension .lib with RenLib"
+    ID_OPTIONS_ENVIRONMENT_ASSOCIATE_WZQ 
+                            "Associate file extension .wzq with RenLib"
+    ID_OPTIONS_ENVIRONMENT_ASSOCIATE_PDB 
+                            "Associate file extension .pdb with RenLib"
+    ID_OPTIONS_ENVIRONMENT_ASSOCIATE_POS 
+                            "Associate file extension .pos with RenLib"
+    ID_OPTIONS_ENVIRONMENT_ASSOCIATE_ALL 
+                            "Associate all recognized file extensions, except .txt, with RenLib"
+    ID_OPTIONS_ENVIRONMENT_ASSOCIATE_BUF 
+                            "Associate file extension .buf with RenLib"
+    ID_OPTIONS_ENVIRONMENT_ASSOCIATE_RENJS 
+                            "Associate file extension .renjs and .ren with RenLib"
+    ID_OPTIONS_ENVIRONMENT_ASSOCIATE_BDT 
+                            "Associate file extension .bdt with RenLib"
+    ID_OPTIONS_ENVIRONMENT_ASSOCIATE_RDF 
+                            "Associate file extension .rdf with RenLib"
+    ID_OPTIONS_EVALUATOR_RENJU_CLASS_RENJU_SOLVER 
+                            "Use Renju Class evaluator (by Lu Wenzhe) and Renju Solver (by Xiangdong Wen)"
+    ID_FILE_MAKE_TOURNAMENT_RENLIB_APPLET 
+                            "Create tournament html files for RenLib applet"
+    ID_VIEW_COLOR_BOARD_CHOOSE_BITMAP "Choose bitmap of board"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_AUTO_ENTER_BOARD_TEXT "Auto enter board text"
+    ID_EDIT_SET_NEXT_AUTO_BOARD_TEXT "Set next auto board text, one character"
+    ID_VIEW_COLOR_VCF_COLOR_CHOOSE_BLACK "Choose color of VCF for black"
+    ID_VIEW_COLOR_VCF_COLOR_DEFAULT 
+                            "Choose default colors of VCF: Blue and Green"
+    ID_VIEW_COLOR_VCF_COLOR_CHOOSE_WHITE "Choose color of VCF for white"
+    ID_VIEW_BOARD_TEXT_SHOW "Show board text"
+    ID_VIEW_BOARD_TEXT_EXTRA_SPACE "Extra space around board text"
+    ID_VIEW_WIN_123         "Show VCF/VCT sequence: 1, 2, 3"
+    ID_VIEW_WIN_ABC_UPPER   "Show VCF/VCT sequence: A, B, C"
+    ID_VIEW_WIN_ABC_LOWER   "Show VCF/VCT sequence: a, b, c"
+    ID_VIEW_COLOR_VCT_COLOR_CHOOSE_BLACK "Choose color of VCT for black"
+    ID_VIEW_COLOR_VCT_COLOR_DEFAULT 
+                            "Choose default colors of VCT: Blue and Green"
+    ID_VIEW_COLOR_VCT_COLOR_CHOOSE_WHITE "Choose color of VCT for white"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLBAR_BACK         "Go back one move\nBack"
+    ID_TOOLBAR_DOWN         "Go down, i.e. make moves as long as only one variant\nDown"
+    ID_TOOLBAR_UP           "Go back until branch\nUp"
+    ID_TOOLBAR_FORWARD      "Go forward one move, i.e. repeat previous move\nForward"
+    ID_TOOLBAR_1ST_MOVE     "Go back to first move\nFirst Move"
+    ID_TOOLBAR_LAST_MOVE    "Go forward to last move\nLast Move"
+    ID_TOOLBAR_PASS         "Pass move\nPass"
+    ID_EDIT_FIND_VCF        "Find or Hide VCF (by Xiangdong Wen)\nFind or Hide VCF (by Xiangdong Wen)"
+    ID_EDIT_FIND_VCT        "Find or Hide VCT (by Xiangdong Wen)\nFind or Hide VCT (by Xiangdong Wen)"
+    ID_EDIT_FIND_STOP       "Stop VCF/VCT search\nStop VCF/VCT"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_SAVE_LIBRARY_AS "Save the current library in another library file"
+    ID_TOOLBAR_FIND_PREVIOUS 
+                            "Find previous (Mark, Comment, Move. Position)\nFind Previous"
+    ID_TOOLBAR_FIND_NEXT    "Find next (Mark, Comment, Move. Position)\nFind Next"
+    ID_VIEW_COLOR_BOARD_TEXT_CHOOSE_COLOR "Choose color of board text"
+    ID_VIEW_COLOR_BOARD_TEXT_DEFAULT 
+                            "Choose default color of board text: Black"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MOVE_LAST_MOVE       "Go forward to last move"
+    ID_EDIT_FIND_MOVE       "Find move in branch\nFind Move"
+    ID_VIEW_COORDINATES_SWAP_NUMBER "Swap order of row numbers"
+    ID_VIEW_SHOW_FORBIDDEN_POINTS 
+                            "Show forbidden points  ( 3x3, 4x4 and Overline )"
+    ID_EDIT_FIND_PREVIOUS   "Find previous (Mark, Comment, Move. Position)"
+    ID_EDIT_FIND_SAME_POSITION 
+                            "Find same position in library\nFind Same Position"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_FIND_SIMILAR_POSITION 
+                            "Find similar position in library\nFind Similar Position"
+    ID_VIEW_AUTO_FIND_SAME_POSITION 
+                            "Automatically find same positions in library"
+    ID_VIEW_SHOW_AUTO_LINK_VARIANTS 
+                            "Show Auto Links Variants, i.e. variants from other same positions"
+    ID_VIEW_SHOW_CHANGED_ORDER_OF_MOVES_VARIANTS 
+                            "Show Changed Order of Moves, i.e. variants from other same positions"
+    ID_VIEW_COLOR_CHANGED_ORDER_OF_MOVES_VARIANT_COLOR_CHOOSE_BLACK 
+                            "Choose color of changed order of moves variant for black"
+    ID_VIEW_COLOR_CHANGED_ORDER_OF_MOVES_VARIANT_COLOR_CHOOSE_WHITE 
+                            "Choose color of changed order of moves variant for white"
+    ID_VIEW_COLOR_CHANGED_ORDER_OF_MOVES_VARIANT_COLOR_DEFAULT 
+                            "Choose default colors of changed order of moves variants: Light Blue and Light Green"
+    ID_VIEW_COLOR_AUTO_LINK_VARIANT_COLOR_CHOOSE_BLACK 
+                            "Choose color of auto link variant for black"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BROWSER_RENLIB_USERS_GUIDE "Open RenLib User's Guide"
+    ID_BROWSER_FORUM_ONLINE_RENJU_CLASS "Open Forum - Online Renju Class"
+    ID_BROWSER_START_PAGE   "Open Start Page"
+    ID_BROWSER_USE_CURRENT_PAGE_AS_START_PAGE "Use current page as start page"
+    ID_BROWSER_OPEN_DIAGRAMS "Open diagrams as a new library"
+    ID_BROWSER_READ_DIAGRAMS "Read and merge diagrams"
+    ID_FILE_EXPORT_LIBRARY_GAME_COLLECTION 
+                            "Export positions in the library to game collection format"
+    ID_BROWSER_RENLIB_NEWS  "Open RenLib News page"
+    ID_EDIT_INSERT_PASS_MOVE "Insert pass move"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_PROBLEM_MODE    "Problem Mode"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_COLOR_AUTO_LINK_VARIANT_COLOR_CHOOSE_WHITE 
+                            "Choose color of auto link variant for white"
+    ID_VIEW_COLOR_AUTO_LINK_VARIANT_COLOR_DEFAULT 
+                            "Choose default colors of auto link variants: Blue and Green"
+    ID_VIEW_COLOR_STONE_CHOOSE_BLACK "Choose color of black stone"
+    ID_VIEW_COLOR_STONE_CHOOSE_WHITE "Choose color of white stone"
+    ID_VIEW_COLOR_STONE_DEFAULT 
+                            "Choose default colors of stones: Black and White"
+    ID_VIEW_COLOR_VARIANT_CHOOSE_BLACK "Choose color of black variant"
+    ID_VIEW_COLOR_VARIANT_CHOOSE_WHITE "Choose color of white variant"
+    ID_VIEW_COLOR_VARIANT_DEFAULT 
+                            "Choose default colors of variants: Black and White"
+    ID_VIEW_COLOR_LAST_MOVE_CHOOSE_COLOR "Choose color of last move marker"
+    ID_VIEW_COLOR_LAST_MOVE_DEFAULT 
+                            "Choose default color of last move marker: Dark Yellow, RGB(192,192,0)"
+    ID_MOVE_PASS            "Pass move"
+    ID_VIEW_COLOR_COMMENT_TEXT "Choose color of comment text"
+    ID_VIEW_COLOR_COMMENT_BACKGROUND "Choose color of comment backgound"
+    ID_VIEW_COLOR_COMMENT_DEFAULT 
+                            "Choose default colors of comment text and background: Black and White"
+    ID_VIEW_COLOR_COORDINATE_CHOOSE_COLOR "Choose color of coordinate text"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_DELETE_MOVES    "Do you want to delete %d moves?"
+    IDS_MSG_DELETE_ONE_MOVE "Do you want to delete one move?"
+    IDS_CAP_DELETE_MOVE     "Delete Move"
+    IDS_MSG_CLEAR_ALL_MARKS "Do you want to clear %d mark(s)?"
+    IDS_CAP_CLEAR_ALL_MARKS "Clear All Marks"
+    IDS_MSG_VERSION         "The library is created by the newer version %d.%d of RenLib"
+    IDS_CAP_VERSION         "Check Library File"
+    IDS_CAP_ADD_TABLE       "Read Library"
+    IDS_MSG_WRITE           "File could not be opened for writing : %s"
+    IDS_CAP_WRITE           "Write Library"
+    IDS_CAP_OPEN            "Open File"
+    IDS_MSG_LIBRARY_DATA    "Invalid library data for move number: %d"
+    IDS_MSG_POSITION        "Invalid move: Pos: (%d,%d)"
+    IDS_MSG_REPORT          "Please, send an error report together with the library file."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INFO_MOVE           "Move %d"
+    IDS_FILTER_RENLIB_LIBRARY "RenLib library (*.lib)"
+    IDS_DLG_FILE            "File"
+    IDS_EXT_RDF             ".rdf\t\tRenju Dynamic Figure"
+    IDS_VARIANT_POSITION    "Variant Position"
+    IDS_INVALID_LIBRARY     "<Invalid Library>"
+    IDS_CAP_CREATE_BDT      "Create BDT file"
+    IDS_CAP_CREATE_BUF      "Create BUF file"
+    IDS_MSG_DELETE_CUR_MOVE "Do you want to delete the current move?"
+    IDS_CAP_DELETE_VARIANTS "Delete Variants"
+    IDS_EXT_WZQ             ".wzq\t\tBasecity game"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CAP_ASSOCIATE_LIB   "Associate .lib with RenLib"
+    IDS_CAP_ASSOCIATE_WZQ   "Associate .wzq with RenLib"
+    IDS_CAP_ASSOCIATE_BUF   "Associate .buf with RenLib"
+    IDS_CAP_ASSOCIATE_PDB   "Associate .pdb with RenLib"
+    IDS_CAP_ASSOCIATE_POS   "Associate .pos with RenLib"
+    IDS_CAP_ASSOCIATE_ALL   "Associate .lib, .buf, .pdb, .pos, .renjs, .ren and.wzq with RenLib"
+    IDS_CAP_CREATE_RENARTIST_APPLET "Create html file for renartist applet"
+    IDS_CAP_CREATE_RENLIB_APPLET "Create html file for RenLib applet"
+    IDS_FILTER_ALLFILES     "All files"
+    IDS_FILTER_TEXT_GAME    "Text game (*.txt)"
+    IDS_FILTER_BASECITY_GAME "Basecity game (*.wzq)"
+    IDS_FILTER_DATAFREE_BUF "Datafree buf (*.buf)"
+    IDS_FILTER_GORENJER_PDB "GoRenjer PDB (*.pdb)"
+    IDS_FILTER_POS_FILE     "POS file (*.pos)"
+    IDS_SAVE_BOARD_TEXT_DIRECTORY 
+                            "Select directory where text board files are saved"
+    IDS_SAVE_APPLET_HTML_DIRECTORY 
+                            "Select directory where applet html files are saved"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NO_FILES            "There are no files to read in %s"
+    IDS_INVALID_LIB         "The file %s is not a RenLib library"
+    IDS_FILTER_BMP_FILE     "Bitmap file (*.bmp)"
+    IDS_FILTER_RENLIB_APPLET_FILE "RenLib applet (*.htm)"
+    IDS_FILTER_RENARTIST_APPLET_FILE "Renartist applet (*.htm)"
+    IDS_FILTER_RENJUCLASS_DIAGRAM "Renju class diagram (*.htm)"
+    IDS_CAP_CREATE_RENJUCLASS_DIAGRAM 
+                            "Create html file for renjuclass diagram"
+    IDS_CAP_ASSOCIATE_RENJS "Associate .renjs and .ren with RenLib"
+    IDS_CAP_CREATE_PDB      "Create Pdb file"
+    IDS_FILTER_PDB_FILE     "Pdb file (*.pdb)"
+    IDS_FILTER_SGF_GAME     "Smart game format (*.sgf)"
+    IDS_CAP_ASSOCIATE_SGF   "Associate .sgf with RenLib"
+    IDS_CAP_EXPORT_RENLIB_APPLET "Export RenLib Applet"
+    IDS_MSG_EXPORT_RENLIB_APPLET 
+                            "RenLib applet files (RenLib*.htm) already exists.\nDo you want to overwrite?"
+    IDS_RENLIB_EMAIL        "renlib@renju.se"
+    IDS_TAB_BROWSER         "Browser"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILTER_BDT_FILE     "ShowRenju file (*.bdt)"
+    IDS_NAME_RENJU_NET_PORTAL "RenjuNet Portal"
+    IDS_URL_RENJU_NET_PORTAL "http://www.renju.net/"
+    IDS_NAME_RENJU_INTERNATIONAL_FEDERATION 
+                            "RIF - Renju International Federation"
+    IDS_URL_RENJU_INTERNATIONAL_FEDERATION "http://www.renju.net/"
+    IDS_NAME_ONLINE_RENJU_CLASS "Online Renju Class"
+    IDS_URL_ONLINE_RENJU_CLASS "http://www.renjuclass.com/"
+    IDS_NAME_FORUM_ONLINE_RENJU_CLASS "Forum - Online Renju Class"
+    IDS_URL_FORUM_ONLINE_RENJU_CLASS 
+                            "http://ns02.compute.com.tw/~renjuclass/cgi-bin/forum/leoboard.cgi"
+    IDS_NAME_RENLIB_HOMEPAGE_1ST "RenLib Homepage - 1st"
+    IDS_URL_RENLIB_HOMEPAGE_1ST "http://www.renlib.tk"
+    IDS_NAME_RENLIB_HOMEPAGE_2ND "RenLib Homepage - 2nd"
+    IDS_URL_RENLIB_HOMEPAGE_2ND "http://www.renju.se/renlib"
+    IDS_NAME_RENLIB_NEWS    "RenLib News"
+    IDS_NAME_RENLIB_USERS_GUIDE "RenLib User's Guide"
+    IDS_NAME_START_PAGE     "Start Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TAB_STATISTICS      "Statistics"
+    IDS_MERGE_COMMENT       "Merge Comment"
+    IDS_MSG_MERGE_COMMENTS  "Detected conflicting comments.\nUse commands Find Next or Find Previous to merge comments."
+    IDS_CAP_ASSOCIATE_RDF   "Associate .rdf with RenLib"
+    IDS_CAP_CONVERT_TO_STANDARD "Convert To Standard"
+    IDS_INFO_IN             " in %s"
+    IDS_MSG_CONVERT_TO_STANDARD 
+                            "Do you want to convert positions in the library to standard?"
+    IDS_CAP_EXPORT_TEXT_BOARD "Export Text Board"
+    IDS_MSG_EXPORT_TEXT_BOARD 
+                            "RenLib text board files (RenLib*.txt) already exists.\nDo you want to overwrite?"
+    IDS_MSG_SAVING_FILE     "Saving file"
+    IDS_MSG_EXPORT_SELECTED_POSITIONS 
+                            "Do you want to limit number of positions to export?\n\nClick Yes if you want to save positions according to comment search.\nClick No to export all positions."
+    IDS_FILTER_RDF_FILE     "Renju Dynamic Figure (*.rdf)"
+    IDS_FILTER_RENJS        "RenJS game (*.renjs; *.ren)"
+    IDS_CAP_ASSOCIATE_BDT   "Associate .bdt with RenLib"
+    IDS_MSG_RENLIB_PATH     "Path of RenLib:\n%s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EXT_PDB             ".pdb\t\tGoRenjer PDB file"
+    IDS_INFO_BOARD_TEXTS    ", %d board texts"
+    IDS_BOARD_TEXT          "Board Text"
+    IDS_MENU_FIND_VCF       "Find VCF\tF4"
+    IDS_MENU_HIDE_VCF       "Hide VCF\tF4"
+    IDS_VCF_FOUND           "VCF found - no of moves: %d"
+    IDS_VCF_NOT_FOUND       "VCF not found"
+    IDS_CAP_CREATE_TEXT_BOARD "Create Text Board file"
+    IDS_CAP_CREATE_POS      "Create POS file"
+    IDS_EXT_POS             ".pos\t\tPOS game"
+    IDS_EXT_SGF             ".sgf\t\tSmart game format"
+    IDS_MENU_FIND_VCT       "Find VCT\tF5"
+    IDS_MENU_HIDE_VCT       "Hide VCT\tF5"
+    IDS_TAB_COMMENT         "Comment"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CAP_WEB_PAGE        "Web Page"
+    IDS_EXT_HTML            ".html, .htm\tWeb page"
+    IDS_FILTER_GAME_COLLECTION "Game Collection (*.htm)"
+    IDS_CAP_EXPORT_GAME_COLLECTION "Export Game Collection"
+    IDS_VCT_FOUND           "VCT found"
+    IDS_VCT_NOT_FOUND       "VCT not found"
+    IDS_RENJU_SOLVER_VCF    "Renju Solver - nodes: %d"
+    IDS_RENJU_SOLVER_VCT    "Renju Solver - nodes: %d, level: %d"
+    IDS_MERGE_ALL_READY     "Merge All Ready"
+    IDS_PASS                "Pass"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROGRESS            "Progress"
+    IDS_CANCEL_LABEL        " Cancel "
+    IDS_CAP_MERGE_ALL       "Merging %d Comments"
+    IDS_CAP_READING_FILES   "Reading %d Files"
+    IDS_MSG_READING_FILE    "Reading file"
+    IDS_NO_LIBRARY          "(No Library)"
+    IDS_NEW_LIBRARY         "<New Library>"
+    IDS_READ_MOVES          "Read %d moves"
+    IDS_ADDED_MOVES         "Added %d of %d moves"
+    IDS_INFO_COMMENTS       ", %d comments"
+    IDS_INFO_MARKS          ", %d marks"
+    IDS_INFO_FROM           " from %s"
+    IDS_NO_START_POSITION   "No start position"
+    IDS_MARK                "Mark"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_NOTE            "NOTE: A move will be made at A15 and a mark is set."
+    IDS_CAP_MAKE            "Make Move"
+    IDS_MSG_OPEN_FILE       "File can't be opened: %s"
+    IDS_MSG_OK_CANCEL       "Click OK to continue or Cancel to abort"
+    IDS_MSG_CANCELLED       "Cancelled"
+    IDS_INFO_START          " Start"
+    IDS_INFO_MARK           " Mark"
+    IDS_MENU_DISPLAY_MODE   "Display Mode\tCtrl+M"
+    IDS_MENU_UPDATE_MODE    "Update Mode\tCtrl+M"
+    IDS_MENU_CLEAR_START_POSITION "Clear Start Position"
+    IDS_MENU_SET_START_POSITION "Set Start Position"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MOVE                "Move"
+    IDS_SIMILAR_POSITION    "Similar Position"
+    IDS_SAME_POSITION       "Same Position"
+    IDS_COMMENT             "Comment"
+    IDS_SAVED_MOVES         "Saved %d moves"
+    IDS_MSG_FIND            "%s - %d of %d"
+    IDS_MSG_FIND_NOT_FOUND  "%s not found"
+    IDS_FILE_EXTENSIONS     "RenLib file extensions:"
+    IDS_EXT_LIB             ".lib\t\tLibrary"
+    IDS_EXT_RENJS           ".renjs, .ren\tRenJS game"
+    IDS_EXT_TXT             ".txt\t\tText game"
+    IDS_EXT_BUF             ".buf\t\tDatafree buf"
+    IDS_EXT_BDT             ".bdt\t\tShowRenju file"
+    IDS_INFO_UPDATE_MODE    " Update Mode"
+    IDS_INFO_DISPLAY_MODE   " Display Mode"
+    IDS_INFO_PROBLEM_MODE   " Problem Mode"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_COLOR_STONE_NUMBER_CHOOSE_BLACK 
+                            "Choose color of number for black stone"
+    ID_VIEW_COLOR_STONE_NUMBER_CHOOSE_WHITE 
+                            "Choose color of number for white stone"
+    ID_VIEW_COLOR_STONE_NUMBER_DEFAULT 
+                            "Choose default colors of stone numbers: White and Black"
+    ID_VIEW_COLOR_COORDINATE_DEFAULT 
+                            "Choose default color of coordinate text: Black"
+    ID_VIEW_COLOR_BACKGROUND_CHOOSE_COLOR "Choose color of background"
+    ID_VIEW_COLOR_BACKGROUND_DEFAULT 
+                            "Choose default color of background: Gray"
+    ID_VIEW_COLOR_ALL_DEFAULT "Choose default colors for all"
+    ID_VIEW_COLOR_FORBIDDEN_CHOOSE_COLOR 
+                            "Choose color of forbidden point marker"
+    ID_VIEW_COLOR_FORBIDDEN_DEFAULT 
+                            "Choose default color of forbidden point marker: Red"
+    ID_EDIT_DELETE_VARIANTS "Delete all variants in current position"
+    ID_VIEW_COORDINATES_FOLLOW_ROTATION_AND_REFLECTION 
+                            "Show coordinates according to rotation and reflection"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDW_FILE_BAR            "Show or hide the file toolbar"
+    IDW_MOVE_BAR            "Show or hide the move toolbar"
+    IDW_POSITION_BAR        "Show or hide the position toolbar"
+    IDW_EDIT_BAR            "Show or hide the edit toolbar"
+    IDW_FIND_BAR            "Show or hide the find toolbar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_COLOR_BOARD_DEFAULT_BITMAP 
+                            "Choose default bitmap of board: Wood1.bmp"
+    ID_VIEW_SHOW_BOARD_BITMAP "Show board bitmap or color"
+    ID_VIEW_SHOW_STONE_BITMAP "Show stone bitmap or color"
+    ID_OPTIONS_EVALUATOR_NONE "Don't use any evaluator"
+    ID_FILE_READ            "Read and merge selected file(s)"
+    ID_FILE_READ_ALL        "Read and merge all files in selected directory and subdirectories"
+    ID_FILE_SAVE_POSITION_AS "Save the current position"
+    ID_OPTIONS_ENVIRONMENT_ASSOCIATE_SGF 
+                            "Associate file extension .sgf with RenLib"
+    ID_BROWSER_OPEN_IN_DEFAULT_BROWSER "Open current page in default browser"
+    ID_BROWSER_RENJU_NET_PORTAL "Open RenjuNet Portal"
+    ID_BROWSER_RIF          "Open RIF - Renju International Federation"
+    ID_BROWSER_ONLINE_RENJU_CLASS "Open Online Renju Class"
+    ID_BROWSER_RENLIB_HOMEPAGE_1ST "Open RenLib Homepage (primary)"
+    ID_BROWSER_RENLIB_HOMEPAGE_2ND "Open RenLib Homepage (sendondary)"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SEARCH_COMMENT DIALOG DISCARDABLE  0, 0, 260, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find Comment"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_ONE_LINE_COMMENT,6,22,198,12,ES_AUTOHSCROLL
+    CONTROL         "Comment",IDC_RADIO_COMMENT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,14,46,47,10
+    CONTROL         "Board Text",IDC_RADIO_BOARD_TEXT,"Button",
+                    BS_AUTORADIOBUTTON,14,57,52,10
+    DEFPUSHBUTTON   "OK",IDOK,209,12,44,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,209,29,44,14
+    LTEXT           "Leave empty to find all",IDC_STATIC,128,38,75,8
+    LTEXT           "Enter text:",IDC_STATIC,6,12,34,8
+    GROUPBOX        "Find",IDC_STATIC,6,36,64,34
+END
+
+IDD_SEARCH_MOVE DIALOG DISCARDABLE  0, 0, 176, 64
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find Move Number"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_MOVE_NO,11,24,17,15,ES_NUMBER
+    LTEXT           "Leave empty to find end positions",IDC_STATIC,11,43,111,
+                    8
+    LTEXT           "Enter move number:",IDC_STATIC,11,11,67,8
+    PUSHBUTTON      "Cancel",IDCANCEL,125,34,44,14
+    DEFPUSHBUTTON   "OK",IDOK,125,14,44,14,WS_GROUP
+END
+
+IDD_EDIT_BOARD_TEXT DIALOG DISCARDABLE  0, 0, 103, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Board Text"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_BOARD_TEXT,7,20,37,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    DEFPUSHBUTTON   "OK",IDOK,52,7,44,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,52,25,44,14
+    LTEXT           "Board Text",IDC_STATIC,7,9,37,8
+END
+
+IDD_AUTO_BOARD_TEXT DIALOG DISCARDABLE  0, 0, 163, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Auto Board Text"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_BOARD_TEXT,81,17,16,12,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    DEFPUSHBUTTON   "OK",IDOK,112,7,44,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,112,25,44,14
+    LTEXT           "Next Auto Board Text",IDC_STATIC,7,19,70,8
+END
+
+IDD_TEXT_BOX_DIALOG DIALOG DISCARDABLE  0, 0, 255, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Text Box Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TEXT_BOX_LIST_MSG,5,40,245,100,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL | NOT WS_TABSTOP
+    ICON            IDR_MAINFRAME,IDC_TEXT_BOX_ICON,5,7,20,20
+    LTEXT           "Static",IDC_TEXT_BOX_MSG,31,4,215,25,SS_CENTERIMAGE | 
+                    NOT WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,98,147,59,17,WS_GROUP
+END
+
+IDD_MERGE_ONELINE_COMMENT DIALOG DISCARDABLE  0, 0, 364, 120
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Merge One Line Comment"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Select and edit comment",IDC_STATIC,10,7,81,8
+    CONTROL         "Current",IDC_SELECT_CURRENT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,29,39,10
+    CONTROL         "New",IDC_SELECT_NEW,"Button",BS_AUTORADIOBUTTON,10,54,
+                    31,10
+    CONTROL         "Combined",IDC_SELECT_COMBINED,"Button",
+                    BS_AUTORADIOBUTTON,10,79,47,10
+    EDITTEXT        IDC_EDIT_CURRENT,65,27,292,12,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_NEW,65,52,292,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_COMBINED,65,77,292,12,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    DEFPUSHBUTTON   "OK",IDOK,169,99,44,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,224,99,44,14
+    CONTROL         "Apply selection to all",IDC_MERGE_ALL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,65,101,80,10
+END
+
+IDD_MERGE_MULTI_LINE_COMMENT DIALOG DISCARDABLE  0, 0, 369, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Merge Multi Line Comment"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Select and edit comment",IDC_STATIC,10,7,81,8
+    CONTROL         "Current",IDC_SELECT_CURRENT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,48,39,10
+    CONTROL         "New",IDC_SELECT_NEW,"Button",BS_AUTORADIOBUTTON,10,108,
+                    31,10
+    CONTROL         "Combined",IDC_SELECT_COMBINED,"Button",
+                    BS_AUTORADIOBUTTON,10,168,47,10
+    EDITTEXT        IDC_EDIT_CURRENT,68,28,293,47,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_NEW,68,87,293,47,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_COMBINED,68,147,293,47,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,168,207,44,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,223,207,44,14
+    CONTROL         "Apply selection to all",IDC_MERGE_ALL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,68,209,82,10
+END
+
+IDD_MERGE_BOARD_TEXT DIALOG DISCARDABLE  0, 0, 119, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Merge Board Text"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Select and edit board text",IDC_STATIC,10,7,84,8
+    CONTROL         "Current",IDC_SELECT_CURRENT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,29,39,10
+    CONTROL         "New",IDC_SELECT_NEW,"Button",BS_AUTORADIOBUTTON,10,54,
+                    31,10
+    CONTROL         "Combined",IDC_SELECT_COMBINED,"Button",
+                    BS_AUTORADIOBUTTON,10,79,47,10
+    EDITTEXT        IDC_EDIT_CURRENT,65,27,45,12,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_NEW,65,52,45,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_COMBINED,65,77,45,12,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    DEFPUSHBUTTON   "OK",IDOK,10,125,44,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,65,125,44,14
+    CONTROL         "Apply selection to all",IDC_MERGE_ALL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,23,103,81,10
+END
+
+IDD_RENLIB_APPLET DIALOG DISCARDABLE  0, 0, 344, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RenLib Applet"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Title of applet web page:",IDC_STATIC,10,8,80,8
+    EDITTEXT        IDC_TITLE_APPLET_WEB_PAGE,10,20,264,15,ES_AUTOHSCROLL
+    LTEXT           "Title of game web page:",IDC_STATIC,10,47,78,8
+    EDITTEXT        IDC_TITLE_GAME_WEB_PAGE,10,59,264,15,ES_AUTOHSCROLL
+    GROUPBOX        "Size",IDC_STATIC,10,85,50,40
+    CONTROL         "Big",IDC_RADIO_SIZE_BIG,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,18,96,27,10
+    CONTROL         "Small",IDC_RADIO_SIZE_SMALL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,18,107,35,10
+    CONTROL         "Show One Line Comment",IDC_ONE_LINE_COMMENT,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,75,91,97,10
+    CONTROL         "Show Coordinates",IDC_SHOW_COORDINATES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,178,91,75,10
+    CONTROL         "Show Multi Line Comment",IDC_MULTI_LINE_COMMENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,75,101,100,10
+    CONTROL         "Show Numbers",IDC_SHOW_NUMBERS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,178,101,65,10
+    CONTROL         "Show Board Text",IDC_BOARD_TEXT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,75,111,71,10
+    CONTROL         "Show Commands",IDC_SHOW_COMMANDS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,178,111,72,10
+    CONTROL         "Show Board",IDC_SHOW_BOARD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,75,121,55,10
+    GROUPBOX        "Background Color",IDC_STATIC,265,80,70,55
+    CONTROL         "",IDC_BACKGROUND_COLOR,"Static",SS_BLACKFRAME,270,90,60,
+                    20
+    PUSHBUTTON      "Choose...",IDC_CHOOSE_BACKGROUND_COLOR,275,115,50,14
+    GROUPBOX        "URL",IDC_STATIC,10,137,50,40
+    CONTROL         "Web",IDC_RADIO_URL_WEB,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,18,148,31,10
+    CONTROL         "Local",IDC_RADIO_URL_LOCAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,18,159,34,10
+    LTEXT           "One line comment to repeat:",IDC_STATIC,75,145,92,8
+    COMBOBOX        IDC_REPEAT_ONE_LINE_COMMENT,75,156,260,59,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,285,10,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,285,27,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SEARCH_COMMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 253
+        TOPMARGIN, 12
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_SEARCH_MOVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_EDIT_BOARD_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 96
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_AUTO_BOARD_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_TEXT_BOX_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 250
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_MERGE_ONELINE_COMMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 357
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_MERGE_MULTI_LINE_COMMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_MERGE_BOARD_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_RENLIB_APPLET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 337
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR_FILE        BITMAP  MOVEABLE PURE   "res\\toolbarfile.bmp"
+IDR_TOOLBAR_EDIT        BITMAP  DISCARDABLE     "res\\toolbaredit.bmp"
+IDR_TOOLBAR_MOVE        BITMAP  DISCARDABLE     "res\\toolbarmove.bmp"
+IDR_TOOLBAR_POSITION    BITMAP  DISCARDABLE     "res\\toolbarposition.bmp"
+IDR_TOOLBAR_FIND        BITMAP  DISCARDABLE     "res\\toolbarfind.bmp"
+IDB_INVALID_BITMAP      BITMAP  DISCARDABLE     "res\\InvalidBitmap.bmp"
+IDB_BLACK_SMALL         BITMAP  DISCARDABLE     "res\\stoneBlackSmall.bmp"
+IDB_BLACK_LARGE         BITMAP  DISCARDABLE     "res\\stoneBlackLarge.bmp"
+IDB_BLACK_MEDIUM        BITMAP  DISCARDABLE     "res\\stoneBlackSmallMedium.bmp"
+IDB_WHITE_LARGE         BITMAP  DISCARDABLE     "res\\stoneWhiteLarge.bmp"
+IDB_WHITE_MEDIUM        BITMAP  DISCARDABLE     "res\\stoneWhiteMedium.bmp"
+IDB_WHITE_SMALL         BITMAP  DISCARDABLE     "res\\stoneWhiteSmall.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RenLib.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR_MOVE TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32898
+    BUTTON      ID_BUTTON32899
+    BUTTON      ID_BUTTON32900
+    BUTTON      ID_BUTTON32901
+    BUTTON      ID_BUTTON32902
+    BUTTON      ID_BUTTON32903
+    BUTTON      ID_BUTTON33019
+    BUTTON      ID_BUTTON32904
+END
+
+IDR_TOOLBAR_POSITION TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32906
+    BUTTON      ID_BUTTON32907
+    BUTTON      ID_BUTTON32908
+    BUTTON      ID_BUTTON32909
+    BUTTON      ID_BUTTON32910
+    BUTTON      ID_BUTTON32911
+    BUTTON      ID_BUTTON32912
+    BUTTON      ID_BUTTON32913
+END
+
+IDR_TOOLBAR_EDIT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32914
+    BUTTON      ID_BUTTON32915
+    BUTTON      ID_BUTTON32916
+    BUTTON      ID_BUTTON32917
+END
+
+IDR_TOOLBAR_FIND TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32930
+    BUTTON      ID_BUTTON32932
+    BUTTON      ID_BUTTON32939
+    BUTTON      ID_BUTTON32931
+    BUTTON      ID_BUTTON32933
+    BUTTON      ID_BUTTON32934
+    BUTTON      ID_BUTTON32937
+    BUTTON      ID_BUTTON32938
+    BUTTON      ID_BUTTON32946
+    SEPARATOR
+    BUTTON      ID_BUTTON33015
+    BUTTON      ID_BUTTON33016
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR  DISCARDABLE     "res\\hand.cur"
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\RenLib.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

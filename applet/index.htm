@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta name="GENERATOR" content="RenLib">
+<title>Example using RenLib applet. See applet parameters in html code.</title>
+</head>
+<body>
+
+<h3>Public Online Applet</h3>
+
+In view mode, the position is updated every 10 seconds from URL1 (see html source).<br>
+<br>
+
+<applet codebase="." code="RenLibApplet.class" width=535 height=395>
+alt="Your browser understands the &lt;APPLET&gt; tag but isn't running the applet, for some reason. Your browser is completely ignoring the &lt;APPLET&gt; tag!"
+<PARAM NAME="moves" VALUE="h8">
+<PARAM NAME="size" VALUE="19">
+<PARAM NAME="showOneLineComment" VALUE="1">
+<PARAM NAME="showMultiLineComment" VALUE="1">
+<PARAM NAME="showCoordinates" VALUE="1">
+<PARAM NAME="showNumbers" VALUE="1">
+<PARAM NAME="showCommands" VALUE="1">
+<PARAM NAME="showBoard" VALUE="1">
+<PARAM NAME="backgroundColor" VALUE="225|225|225">
+<PARAM NAME="urlOnlineGame" VALUE="http://www.lemes.se/cgi-bin/renlib/show_game.php">
+<PARAM NAME="refreshInterval" VALUE="10">
+</applet>
+
+<h3>Admin Online Applet</h3>
+
+In view mode, the position is updated every 15 seconds from URL1 (see html source).<br>
+In Edit mode, the position can be updated and submitted to URL2 (see html source).<br>
+<br>
+
+<applet codebase="." code="RenLibApplet.class" width=535 height=395>
+alt="Your browser understands the &lt;APPLET&gt; tag but isn't running the applet, for some reason. Your browser is completely ignoring the &lt;APPLET&gt; tag!"
+<PARAM NAME="moves" VALUE="h8">
+<PARAM NAME="size" VALUE="19">
+<PARAM NAME="showOneLineComment" VALUE="1">
+<PARAM NAME="showMultiLineComment" VALUE="1">
+<PARAM NAME="showCoordinates" VALUE="1">
+<PARAM NAME="showNumbers" VALUE="1">
+<PARAM NAME="showCommands" VALUE="1">
+<PARAM NAME="showBoard" VALUE="1">
+<PARAM NAME="backgroundColor" VALUE="225|225|225">
+<PARAM NAME="urlOnlineGame" VALUE="http://www.lemes.se/cgi-bin/renlib/show_game.php">
+<PARAM NAME="urlUpdateOnlineGame" VALUE="http://www.lemes.se/cgi-bin/renlib/update_game.php?text=">
+<PARAM NAME="refreshInterval" VALUE="15">
+</applet>
+
+</body>
+</html>
