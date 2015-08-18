@@ -8,7 +8,10 @@ Renlib can help you to create the Java-based renju diagrams for your website, to
 space for comments. Windows XP users should know that their Internet Explorer does not have Java 
 support and in that case if you want to create web pages with renju diagrams then you could just
 visit www.java.com and install Java support first. Renlib is programmed by Frank Arkbo, Sweden.
-Location: http://www.renju.se/renlib/ The project is made in Microsoft Visual Studio C++. 
+
+Location: http://www.renju.se/renlib/ 
+
+The project is made in Microsoft Visual Studio C++. 
 
 Tags: Five in a Row, Tic Tac Toe, TicTacToe, 5 in a Row, Go-Moku, Connect, Connect5, Connect6, Caro, Noughts and Crosses, Gomoku, Renju, Pente, Piskvork, Amoba, Kółko i Krzyżyk, Gomocup, AI, Engine, Artificial Intelligence, Brain, Pbrain, Gra, Game, Source Code Files, Program, Programming, Github, Board, Coding.
 
